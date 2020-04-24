@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>index.html</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <div class="canvasWrapper" id="canvasWrapper">
+        <canvas id="layer1" style="z-index: 0;" ></canvas>
+        <canvas id="layer2" style="z-index: 1;"></canvas>
+    </div>
+    <div class="align-right">
+        <div class="container">
+            <canvas id="color-picker"></canvas>
+        </div>
+        <br>
+        <div class="slidecontainer">
+            <div><input type="range" min="1" max="50" value="25" class="slider" id="myRange"></div>
+            <div><img class="icon" src="icon/artist.png" alt="brush"></div><br><br>
+            <div class="custom-select" style="width:150px; display: inline-block;">
+                <select id="fontFamily" name="fontFamily">
+                    <option value="Arial Black">Arial Black</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Cursive">Cursive</option>
+                    <option value="Fantasy">Fantasy</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="STFangsong">華文仿宋</option>
+                    <option value="STSong">華文宋體</option>
+                    <option value="STHeiti">華文黑體</option>
+                    <option value="BiauKai">標楷體</option>
+                </select>
+            </div>
+            <div class="custom-select" style="width:50px; display: inline-block;">
+                <select id="fontSize" name="fontSize">
+                    <option value="8">8</option>
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="16">16</option>
+                    <option value="18">18</option>
+                    <option value="24">24</option>
+                    <option value="48">48</option>
+                    <option value="64">64</option>
+                    <option value="100">100</option>
+                </select>
+            </div>
+
+        </div>
+        <table>
+            <tr class="row">
+                <td><button class="button" id="Pencil" onclick="Choose('Pencil')" style="background-image: url('icon/pencil1.png')"></button></td>
+                <td><button class="button" id="Eraser" onclick="Choose('Eraser')" style="background-image: url('icon/eraser.png')"></button></td>
+                <td><button class="button" id="Text" onclick="Choose('Text')" style="background-image: url('icon/text.png')"></button></td>
+                <td><button class="button" id="Line" onclick="Choose('Line')" style="background-image: url('icon/line.png')"></button></td>
+            </tr>
+            <tr class="row">
+                <td><button class="button" id="Circle" onclick="Choose('Circle')" style="background-image: url('icon/circle.png')"></button></td>
+                <td><button class="button" id="Triangle" onclick="Choose('Triangle')" style="background-image: url('icon/triangle.png')"></button></td>
+                <td><button class="button" id="Rectangle" onclick="Choose('Rectangle')" style="background-image: url('icon/rectangle.png')"></button></td>
+                <td><button class="button" id="Fill" onclick="changeFill()" style="background-image: url('icon/dry-clean.png')"></button></td>
+            </tr>
+            <tr class="row">
+                <td><button class="button" id="Undo" onclick="Undo()" style="background-image: url('icon/undo.png')"></button></td>
+                <td><button class="button" id="Redo" onclick="Redo()" style="background-image: url('icon/redo.png')"></button></td>
+                <td><button class="button" id="Download" onclick="Download()" style="background-image: url('icon/download.png')"></button></td>
+                <td><div class="image-upload"><label for="file-input"><img class="button" src="icon/upload.png"/></label><input id="file-input" type="file" accept="image/*" /></div></td>
+            </tr>
+            <tr class="row">
+                <td><button class="button" id="Clear" onclick="ClearAll()" style="background-image: url('icon/bin.png')"></button></td>
+                <td><button class="button" id="Rainbow" onclick="Choose('Rainbow')" style="background-image: url('icon/rainbow.png')"></button></td>
+            </tr>
+    </div>
+    <!-- javascript -->
+    <script src="script/main.js"></script>
+</body>
+
+</html>

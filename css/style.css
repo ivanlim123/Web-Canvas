@@ -1,0 +1,135 @@
+body {
+    background-image: url("../bg\ img/wooden_bg.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.canvasWrapper {
+    display: inline-block;
+}
+
+table {
+    width: 30%;
+}
+
+.align-right {
+    float: right;
+}
+
+.button {
+    background-size: 40px 40px;
+    background-color: transparent;
+    border: none;
+    height: 40px;
+    width: 40px;
+}
+
+th, td {
+    padding: 15px;
+}
+
+.image-upload>input {
+    display: none;
+}
+
+.slidecontainer {
+    width: 80%;
+}
+  
+.slider {
+    float: left;
+    -webkit-appearance: none;
+    width: 80%;
+    height: 10px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+  
+.slider:hover {
+    opacity: 1;
+}
+  
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url('../icon/rec.png');
+    cursor: pointer;
+}
+  
+.slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    border: 0;
+    background: url('../icon/rec.png');
+    cursor: pointer;
+}
+
+.icon {
+    float: right;
+}
+
+#pencilIcon {
+    cursor: url("../small_icon/pencil.png"), auto;
+}
+
+#fillCircleIcon {
+    cursor: url("../small_icon/circle.png"), auto;
+}
+
+#circleIcon {
+    cursor: url("../small_icon/dry-clean.png"), auto;
+}
+
+#fillRectangleIcon {
+    cursor: url("../small_icon/rectangle.png"), auto;
+}
+
+#rectangleIcon {
+    cursor: url("../small_icon/square.png"), auto;
+}
+
+#fillTriangleIcon {
+    cursor: url("../small_icon/triangle.png"), auto;
+}
+
+#triangleIcon {
+    cursor: url("../small_icon/bleach.png"), auto;
+}
+
+#lineIcon {
+    cursor: url("../small_icon/line.png"), auto;
+}
+
+#eraserIcon {
+    cursor: url("../small_icon/eraser.png"), auto;
+}
+
+#textIcon {
+    cursor: url("../small_icon/text.png"), auto;
+}
+
+#rainbowIcon {
+    cursor: url("../small_icon/rainbow.png"), auto;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+#color-picker {
+    border: 3px solid rgba(15, 15, 15, 0.2);
+}
+  
+  
